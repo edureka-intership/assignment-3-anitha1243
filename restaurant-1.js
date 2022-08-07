@@ -5,7 +5,7 @@ class Restaurant {
         }
         // Method
     printAllRestaurantNames() {
-            return this.restaurantList.map(item => item.restName);
+            return console.log(this.restaurantList.map(item => item.restName));
         }
         // Method
     filterRestaurantByCity(city) {
@@ -22,5 +22,5 @@ const restaurant = new Restaurant([
     { restName: 'noodles', address: '6 maker st', city: 'melbourne' }
 ]);
 
-console.log(restaurant.printAllRestaurantNames());
-console.log(restaurant.filterRestaurantByCity('melbourne'));
+restaurant.printAllRestaurantNames();
+restaurant.filterRestaurantByCity('sydney');
